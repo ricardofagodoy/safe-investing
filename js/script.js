@@ -1,0 +1,1 @@
+console.log(`Safe Investing Prototype (${new Date()})`)

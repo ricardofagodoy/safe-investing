@@ -1,0 +1,48 @@
+@font-face {
+    font-family: customFont;
+    src: url("../fonts/comfortaa/Comfortaa-Light.ttf");
+}
+
+body {
+    width: 80%;
+    height: 80vh;
+    margin: 10%;
+    font: 100% customFont;
+    background-color: #55b499;
+}
+
+#title {
+    font-size: 4rem;
+    color: #801532;
+    display: inline-block;
+    margin: 10% 0;
+}
+
+#nova-conta {
+    margin-top: 20%;
+}
+
+.center {
+    text-align: center
+}
+
+.element {
+    font-size: 1.3rem;
+    padding: 2%;
+    border-radius: 10px;
+    font-family: inherit;
+    box-sizing: border-box;
+    width: 100%;
+    margin-top: 5%;
+}
+
+.button {
+    background-color: #D2791D;
+    color: #FFF;
+    border: none;
+    padding: 4%;
+}
+
+.small {
+    width: 75%;
+}
