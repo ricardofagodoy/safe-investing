@@ -15,24 +15,25 @@
 
 <body>
 
-    <div class="center">
+    <div class="center-full-width">
 
       <div id="title">Safe Investing</div>
 
-      <form name="login">
+      <div>
         <input class="element" type="text" placeholder="Usuário"></input>
         <input class="element" type="text" placeholder="Senha"></input>
 
-        <button class="element button">Entrar</button>
-      </form>
+        <button class="element button" onclick="move('primeiro_acesso')">Entrar</button>
 
-      <form id="nova-conta" name="nova-conta">
+        <a href="#" onclick="move('esqueci_senha')" style="display: inline-block; margin-top: 5%">esqueci minha senha</a>
+      </div>
+
+      <div name="nova-conta" action="nova_conta.html" style="margin-top: 15%">
         <button class="element button small">Criar conta</button>
 
         <img src="images/button-google.png" width="80%" style="margin-top: 3%"/>
         <img src="images/button-facebook.png" width="80%"/>
-      </form>
-
+      </div>
     </div>
 
   <script src="js/script.js"></script>

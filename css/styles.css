@@ -4,9 +4,10 @@
 }
 
 body {
+    position: relative;
     width: 80%;
-    height: 80vh;
-    margin: 10%;
+    height: 100vh;
+    margin: 0 10%;
     font: 100% customFont;
     background-color: #55b499;
 }
@@ -18,15 +19,20 @@ body {
     margin: 10% 0;
 }
 
-#nova-conta {
-    margin-top: 20%;
+.hidden {
+    visibility: hidden;
 }
 
-.center {
-    text-align: center
+.center-full-width {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .element {
+    display: inline-block;
     font-size: 1.3rem;
     padding: 2%;
     border-radius: 10px;
