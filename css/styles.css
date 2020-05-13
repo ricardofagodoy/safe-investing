@@ -23,6 +23,7 @@
     color: #801532;
     display: inline-block;
     margin: 0 0 4vh 0;
+    margin: 0 0 calc(var(--vh, 1vh) * 4) 0;
 }
 
 .subtitle {
@@ -30,6 +31,7 @@
     color: #801532;
     display: inline-block;
     margin: 0 0 3vh 0;
+    margin: 0 0 calc(var(--vh, 1vh) * 3) 0;
 }
 
 .info-text {
@@ -37,6 +39,7 @@
     color: #FFF;
     display: inline-block;
     margin: 2vh 0;
+    margin: calc(var(--vh, 1vh) * 2) 0;
 }
 
 .center-full-width {
@@ -64,6 +67,7 @@
     box-sizing: border-box;
     width: 100%;
     margin-top: 1.5vh;
+    margin-top: calc(var(--vh, 1vh) * 1.5);
 }
 
 .button {
@@ -81,6 +85,7 @@
     background-color: #801532;
     position: fixed;
     top: 90vh;
+    top: calc(var(--vh, 1vh) * 90);
     left: 0;
     width: 100vw;
     height: 8vh;
