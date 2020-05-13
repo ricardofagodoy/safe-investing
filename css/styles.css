@@ -6,50 +6,41 @@
 .body-container {
     position: relative;
     width: 80%;
-    height: 100vh;
-    height: calc(var(--vh, 1vh) * 100);
+    height: calc(var(--vh) * 100);
     margin: 0 10%;
     font: 100% customFont;
     background-color: #55b499;
 }
 
 .body-container-logged {
-    height: 90vh;
-    height: calc(var(--vh, 1vh) * 90);
+    height: calc(var(--vh) * 90);
 }
 
 #title {
     font-size: 4rem;
     color: #801532;
     display: inline-block;
-    margin: 0 0 4vh 0;
-    margin: 0 0 calc(var(--vh, 1vh) * 4) 0;
+    margin: 0 0 calc(var(--vh) * 4) 0;
 }
 
 .subtitle {
     font-size: 3rem;
     color: #801532;
     display: inline-block;
-    margin: 0 0 3vh 0;
-    margin: 0 0 calc(var(--vh, 1vh) * 3) 0;
+    margin: 0 0 calc(var(--vh) * 3) 0;
 }
 
 .info-text {
     font-size: 1.5rem;
     color: #FFF;
     display: inline-block;
-    margin: 2vh 0;
-    margin: calc(var(--vh, 1vh) * 2) 0;
+    margin: calc(var(--vh) * 2) 0;
 }
 
 .center-full-width {
     position: absolute;
-    width: 100%;
     text-align: center;
-
-    /*top: 50%;
-    transform: translateY(-50%);*/
-
+    width: 100%;
     top: 0;
     bottom: 0;
     left: 0;
@@ -66,8 +57,7 @@
     font-family: inherit;
     box-sizing: border-box;
     width: 100%;
-    margin-top: 1.5vh;
-    margin-top: calc(var(--vh, 1vh) * 1.5);
+    margin-top: calc(var(--vh) * 1.5);
 }
 
 .button {
@@ -84,12 +74,10 @@
 #bottom-menu {
     background-color: #801532;
     position: fixed;
-    top: 90vh;
-    top: calc(var(--vh, 1vh) * 90);
+    top: calc(var(--vh) * 90);
     left: 0;
     width: 100vw;
-    height: 8vh;
-    height: calc(var(--vh, 1vh) * 8);
+    height: calc(var(--vh) * 8);
 }
 
 .menu-option {
