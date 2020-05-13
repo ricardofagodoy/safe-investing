@@ -3,7 +3,7 @@
     src: url("../fonts/comfortaa/Comfortaa-Light.ttf");
 }
 
-body {
+.body-container {
     position: relative;
     width: 80%;
     height: 100vh;
@@ -12,18 +12,22 @@ body {
     background-color: #55b499;
 }
 
+.body-container-logged {
+    height: 90vh;
+}
+
 #title {
-    font-size: 3.5rem;
+    font-size: 4rem;
     color: #801532;
     display: inline-block;
-    margin: 4vh 0;
+    margin: 0 0 4vh 0;
 }
 
 .subtitle {
     font-size: 3rem;
     color: #801532;
     display: inline-block;
-    margin: 3vh 0;
+    margin: 0 0 3vh 0;
 }
 
 .info-text {
@@ -33,16 +37,20 @@ body {
     margin: 2vh 0;
 }
 
-.hidden {
-    visibility: hidden;
-}
-
 .center-full-width {
     position: absolute;
     width: 100%;
     text-align: center;
-    top: 50%;
-    transform: translateY(-50%);
+
+    /*top: 50%;
+    transform: translateY(-50%);*/
+
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: fit-content;
+    margin: auto;
 }
 
 .element {
@@ -65,4 +73,23 @@ body {
 
 .small {
     width: 75%;
+}
+
+#bottom-menu {
+    background-color: #801532;
+    position: fixed;
+    top: 90vh;
+    left: 0;
+    width: 100vw;
+    height: 8vh;
+}
+
+.menu-option {
+    position: relative;
+    vertical-align: middle;
+    color: #FFF;
+    font-size: 0.8rem;
+    display: inline-block;
+    width: 18vw;
+    top: 25%;
 }
