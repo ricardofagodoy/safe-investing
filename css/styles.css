@@ -13,10 +13,24 @@ body {
 }
 
 #title {
-    font-size: 4rem;
+    font-size: 3.5rem;
     color: #801532;
     display: inline-block;
     margin: 4vh 0;
+}
+
+.subtitle {
+    font-size: 3rem;
+    color: #801532;
+    display: inline-block;
+    margin: 3vh 0;
+}
+
+.info-text {
+    font-size: 1.5rem;
+    color: #FFF;
+    display: inline-block;
+    margin: 2vh 0;
 }
 
 .hidden {
@@ -39,7 +53,7 @@ body {
     font-family: inherit;
     box-sizing: border-box;
     width: 100%;
-    margin-top: 2vh;
+    margin-top: 1.5vh;
 }
 
 .button {
