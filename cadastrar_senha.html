@@ -10,6 +10,7 @@
   <meta name="author" content="FIAP Team">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
+  <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css" integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
   <link rel="stylesheet" href="css/styles.css?v=1.0">
 </head>
 
@@ -18,12 +19,12 @@
   <div class="center-full-width">
     <div class="subtitle">Cadastrar senha</div>
 
-      <div>
-        <input class="element" type="text" placeholder="Digite sua nova senha"></input>
-        <input class="element" type="text" placeholder="Confirme sua senha"></input>
+    <form class="pure-form" onsubmit="return false">
+        <input class="element" type="password" placeholder="Digite sua nova senha"></input>
+        <input class="element" type="password" placeholder="Confirme sua senha"></input>
 
         <button class="element button" onclick="move('home')">Cadastrar</button>
-      </div>
+    </form>
   </div>
 
   <script src="js/script.js"></script>

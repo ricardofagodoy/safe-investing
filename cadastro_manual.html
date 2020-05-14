@@ -10,6 +10,7 @@
   <meta name="author" content="FIAP Team">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
+  <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css" integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
   <link rel="stylesheet" href="css/styles.css?v=1.0">
 </head>
 
@@ -18,7 +19,7 @@
   <div class="center-full-width">
     <div class="subtitle">Adicionar posição</div>
 
-    <div>
+    <form class="pure-form" onsubmit="return false">
       <input class="element" type="text" placeholder="Tipo de ativo"></input>
       <input class="element" type="text" placeholder="Ativo"></input>
       <input class="element" type="text" placeholder="Quantidade"></input>
@@ -27,7 +28,7 @@
       <input class="element" type="text" placeholder="Custos"></input>
 
       <button class="element button">Adicionar</button>
-    </div>
+    </form>
     
     <div id="bottom-menu">
       <div class="menu-option" onclick="move('home')">Home</div>

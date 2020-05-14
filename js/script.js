@@ -16,7 +16,54 @@ function calculate_vh() {
     console.log(`For this screen, 1vh is ${vh}px`)
 }
 
+function load_chart() {
+
+    if(window.google == undefined)
+        return
+
+    console.log('Drawing chart')
+
+    google.charts.load('current', {'packages':['corechart']})
+    google.charts.setOnLoadCallback(drawChart)
+
+    function drawChart() {
+
+        var data = google.visualization.arrayToDataTable([
+            ['Effort', 'Amount given'],
+            ['FIIs', 30],
+            ['Ações', 70]
+        ]);
+
+        var options = {
+            pieHole: 0.6,
+            pieSliceText: 'none',
+            pieSliceBorderColor: '#d9d9d9',
+            pieSliceTextStyle: {
+                color: 'black'
+            },
+            chartArea:{
+                width: window.innerWidth*0.01*70,
+                height: window.innerHeight*0.01*25
+            },
+            backgroundColor: {
+                fill: '#d9d9d9'
+            },
+            legend: {
+                position: 'labeled'
+            }
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('home-graph'));
+        chart.draw(data, options);
+    }
+}
+
+// On startup
 calculate_vh()
+load_chart()
 
 // Recalculate viewport height on resize
-window.addEventListener('resize', calculate_vh)
+window.addEventListener('resize', () => {
+    calculate_vh()
+    load_chart()
+})

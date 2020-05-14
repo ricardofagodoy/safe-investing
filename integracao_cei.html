@@ -10,6 +10,7 @@
   <meta name="author" content="FIAP Team">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
+  <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css" integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
   <link rel="stylesheet" href="css/styles.css?v=1.0">
 </head>
 
@@ -18,15 +19,15 @@
   <div class="center-full-width">
     <div class="subtitle">Preencha seus dados do CEI</div>
 
-      <div>
+    <form class="pure-form" onsubmit="return false">
 
         <input class="element" type="text" placeholder="CPF"></input>
-        <input class="element" type="text" placeholder="Senha"></input>
+        <input class="element" type="password" placeholder="Senha"></input>
 
         <button class="element button" onclick="move('home')">OK</button>
 
         <button class="element button" style="margin-top: 5vh; background-color: #0097a7;">Esqueci minha senha</button>
-      </div>
+    </form>
   </div>
 
   <script src="js/script.js"></script>

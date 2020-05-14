@@ -26,6 +26,7 @@
 .subtitle {
     font-size: 3rem;
     color: #801532;
+    font-weight: bold;
     display: inline-block;
     margin: 0 0 calc(var(--vh) * 3) 0;
 }
@@ -49,6 +50,11 @@
     margin: auto;
 }
 
+.with-scroll {
+    position: relative;
+    top: calc(var(--vh) * 5);
+}
+
 .element {
     display: inline-block;
     font-size: 1.3rem;
@@ -58,6 +64,10 @@
     box-sizing: border-box;
     width: 100%;
     margin-top: calc(var(--vh) * 1.5);
+}
+
+.small{
+    font-size: 0.8rem;
 }
 
 .button {
@@ -77,15 +87,37 @@
     top: calc(var(--vh) * 90);
     left: 0;
     width: 100vw;
-    height: calc(var(--vh) * 8);
+    height: calc(var(--vh) * 10);
 }
 
 .menu-option {
     position: relative;
     vertical-align: middle;
     color: #FFF;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     display: inline-block;
     width: 18vw;
-    top: 25%;
+    top: 30%;
+}
+
+.text-card {
+    border: 1px solid #801532;
+    border-radius: 1%;
+    height: fit-content;
+}
+
+#home-graph-container {
+    border-radius: 0;
+    padding: 0;
+    height: calc(var(--vh) * 40);
+    border: 1px solid #801532;
+    background-color: #d9d9d9;
+}
+
+#home-graph-title {
+    position: relative;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
