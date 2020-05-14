@@ -5,9 +5,9 @@
 
 .body-container {
     position: relative;
-    width: 80%;
+    width: 90%;
+    margin: 0 5%;
     height: calc(var(--vh) * 100);
-    margin: 0 10%;
     font: 100% customFont;
     background-color: #55b499;
 }
@@ -26,7 +26,6 @@
 .subtitle {
     font-size: 3rem;
     color: #801532;
-    font-weight: bold;
     display: inline-block;
     margin: 0 0 calc(var(--vh) * 3) 0;
 }
@@ -70,15 +69,16 @@
     font-size: 0.8rem;
 }
 
+.asset-title {
+    color: #D2791D;
+    font-weight: bold;
+}
+
 .button {
     background-color: #D2791D;
     color: #FFF;
     border: none;
     padding: 4%;
-}
-
-.small {
-    width: 75%;
 }
 
 #bottom-menu {
@@ -106,18 +106,31 @@
     height: fit-content;
 }
 
+.rounded-card {
+    position: relative;
+    font-size: 0.8rem;
+    border: 2px solid #801532;
+    border-radius: 6%;
+    margin: 5%;
+    padding: 10% 5%;
+    height: calc(var(--vh) * 45);
+    text-align: center;
+}
+
 #home-graph-container {
     border-radius: 0;
     padding: 0;
-    height: calc(var(--vh) * 40);
+    min-height: calc(var(--vh) * 25);
+    height: fit-content;
     border: 1px solid #801532;
     background-color: #d9d9d9;
+    padding: 3%;
 }
 
 #home-graph-title {
     position: relative;
     font-size: 1rem;
     font-weight: bold;
-    margin-top: 5%;
-    margin-bottom: 5%;
+    margin-top: calc(var(--vh) * 2);
+    margin-bottom: calc(var(--vh) * 2);
 }

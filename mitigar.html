@@ -1,0 +1,60 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Safe Investing - Prototype</title>
+
+  <meta name="description" content="Safe Investing Prototype">
+  <meta name="author" content="FIAP Team">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css" integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css?v=1.0">
+</head>
+
+<body class="body-container body-container-logged">
+
+  <div class="center-full-width with-scroll">
+
+    <div class="subtitle" style="margin: 0">Mitigue seus riscos</div>
+
+    <div class="text-card element" onclick="move('planos_premium')">
+      <span class="element small">
+        Compre R$ 2.000,00 em posições de Ouro.
+        <br/><br/>
+        Sugerimos a compra do fundo XPTO, ou você pode comprar Ouro na bolsa americana, através da corretora XPTO.
+      </span>
+      </div>
+
+    <div class="text-card element" onclick="move('planos_premium')">
+      <span class="element small">
+        Compre R$ 2.000,00 em posições de Dólar.
+        <br/><br/>
+        Sugerimos a compra do fundo XPTO, ou abertura de uma conta bancária nos EUA no banco XPTO.
+      </span>
+    </div>
+
+    <div class="text-card element" onclick="move('planos_premium')">
+      <span class="element small">
+        Venda 3 Mini Contratos Futuros do Ibovespa
+        <br/><br/>
+        Você pode realizar esta operação na corretora XPTO sem custos de corretagem. Existem alguns pré-requisitos para operar os Futuros do Ibovespa, verifique os detalhes com a corretora.
+      </span>
+    </div>
+
+    <br/><br/><br/><br/><br/><br/>
+
+    <div id="bottom-menu">
+      <div class="menu-option" onclick="move('home')">Home</div>
+      <div class="menu-option" onclick="move('ativos')">Ativos</div>
+      <div class="menu-option" onclick="move('riscos')">Riscos</div>
+      <div class="menu-option" onclick="move('ir')">IR</div>
+      <div class="menu-option" onclick="move('incluir_posicao')">Incluir Posição</div>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

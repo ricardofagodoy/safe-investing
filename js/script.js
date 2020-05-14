@@ -42,8 +42,8 @@ function load_chart() {
                 color: 'black'
             },
             chartArea:{
-                width: window.innerWidth*0.01*70,
-                height: window.innerHeight*0.01*25
+                width: window.innerWidth*0.01*80,
+                height: window.innerHeight*0.01*30
             },
             backgroundColor: {
                 fill: '#d9d9d9'
