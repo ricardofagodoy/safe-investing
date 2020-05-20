@@ -9,7 +9,7 @@
     margin: 0 5%;
     height: calc(var(--vh) * 100);
     font: 100% customFont;
-    background-color: #55b499;
+    background-color: #93b8e2;
 }
 
 .body-container-logged {
@@ -18,14 +18,14 @@
 
 #title {
     font-size: 4rem;
-    color: #801532;
+    color: #5329b5;
     display: inline-block;
     margin: 0 0 calc(var(--vh) * 4) 0;
 }
 
 .subtitle {
     font-size: 3rem;
-    color: #801532;
+    color: #5329b5;
     display: inline-block;
     margin: 0 0 calc(var(--vh) * 3) 0;
 }
@@ -70,19 +70,19 @@
 }
 
 .asset-title {
-    color: #D2791D;
+    color: #0097a7;
     font-weight: bold;
 }
 
 .button {
-    background-color: #D2791D;
+    background-color: #0097a7;
     color: #FFF;
     border: none;
     padding: 4%;
 }
 
 #bottom-menu {
-    background-color: #801532;
+    background-color: #5154b5;
     position: fixed;
     top: calc(var(--vh) * 90);
     left: 0;
@@ -97,19 +97,20 @@
     font-size: 0.9rem;
     display: inline-block;
     width: 18vw;
-    top: 30%;
+    top: 10%;
 }
 
 .text-card {
-    border: 1px solid #801532;
+    border: 1px solid #5154b5;
     border-radius: 1%;
     height: fit-content;
+    background-color: #dbe3ec;
 }
 
 .rounded-card {
     position: relative;
     font-size: 0.8rem;
-    border: 2px solid #801532;
+    border: 2px solid #5154b5;
     border-radius: 6%;
     margin: 5%;
     padding: 10% 5%;
@@ -122,8 +123,8 @@
     padding: 0;
     min-height: calc(var(--vh) * 25);
     height: fit-content;
-    border: 1px solid #801532;
-    background-color: #d9d9d9;
+    border: 1px solid #5154b5;
+    background-color: #dbe3ec;
     padding: 3%;
 }
 

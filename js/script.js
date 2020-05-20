@@ -46,7 +46,7 @@ function load_chart() {
                 height: window.innerHeight*0.01*30
             },
             backgroundColor: {
-                fill: '#d9d9d9'
+                fill: '#dbe3ec'
             },
             legend: {
                 position: 'labeled'
