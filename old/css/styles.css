@@ -1,0 +1,137 @@
+@font-face {
+    font-family: customFont;
+    src: url("../fonts/comfortaa/Comfortaa-Light.ttf");
+}
+
+.body-container {
+    position: relative;
+    width: 90%;
+    margin: 0 5%;
+    height: calc(var(--vh) * 100);
+    font: 100% customFont;
+    background-color: #93b8e2;
+}
+
+.body-container-logged {
+    height: calc(var(--vh) * 90);
+}
+
+#title {
+    font-size: 4rem;
+    color: #5329b5;
+    display: inline-block;
+    margin: 0 0 calc(var(--vh) * 4) 0;
+}
+
+.subtitle {
+    font-size: 3rem;
+    color: #5329b5;
+    display: inline-block;
+    margin: 0 0 calc(var(--vh) * 3) 0;
+}
+
+.info-text {
+    font-size: 1.5rem;
+    color: #FFF;
+    display: inline-block;
+    margin: calc(var(--vh) * 2) 0;
+}
+
+.center-full-width {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: fit-content;
+    margin: auto;
+}
+
+.with-scroll {
+    position: relative;
+    top: calc(var(--vh) * 5);
+}
+
+.element {
+    display: inline-block;
+    font-size: 1.3rem;
+    padding: 2%;
+    border-radius: 10px;
+    font-family: inherit;
+    box-sizing: border-box;
+    width: 100%;
+    margin-top: calc(var(--vh) * 1.5);
+}
+
+.small{
+    font-size: 0.8rem;
+}
+
+.asset-title {
+    color: #0097a7;
+    font-weight: bold;
+}
+
+.button {
+    background-color: #0097a7;
+    color: #FFF;
+    border: none;
+    padding: 4%;
+}
+
+#bottom-menu {
+    background-color: #5154b5;
+    position: fixed;
+    top: calc(var(--vh) * 90);
+    left: 0;
+    width: 100vw;
+    height: calc(var(--vh) * 10);
+}
+
+.menu-option {
+    position: relative;
+    vertical-align: middle;
+    color: #FFF;
+    font-size: 0.9rem;
+    display: inline-block;
+    width: 18vw;
+    top: 10%;
+}
+
+.text-card {
+    border: 1px solid #5154b5;
+    border-radius: 1%;
+    height: fit-content;
+    background-color: #dbe3ec;
+}
+
+.rounded-card {
+    position: relative;
+    font-size: 0.8rem;
+    border: 2px solid #5154b5;
+    border-radius: 6%;
+    margin: 5%;
+    padding: 10% 5%;
+    height: calc(var(--vh) * 45);
+    text-align: center;
+}
+
+#home-graph-container {
+    border-radius: 0;
+    padding: 0;
+    min-height: calc(var(--vh) * 25);
+    height: fit-content;
+    border: 1px solid #5154b5;
+    background-color: #dbe3ec;
+    padding: 3%;
+}
+
+#home-graph-title {
+    position: relative;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: calc(var(--vh) * 2);
+    margin-bottom: calc(var(--vh) * 2);
+}
