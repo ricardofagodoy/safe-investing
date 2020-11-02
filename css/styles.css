@@ -464,16 +464,17 @@ input[type='checkbox'] {
 .navbar .navbar-brand {
 	padding-top: 0.25rem;
 	padding-bottom: 0.25rem;
+	margin: 2px;
 }
 
 .navbar .logo-image img {
-    width: 6.625rem;
-	height: 2rem;
+    width: 3rem;
+	height: 3rem;
 }
 
 .navbar .logo-text {
 	color: #f1f1f8;
-	font: 700 2rem/1rem "Open Sans", sans-serif;
+	font: 700 2rem/1rem "Montserrat";
 	text-decoration: none;
 }
 
