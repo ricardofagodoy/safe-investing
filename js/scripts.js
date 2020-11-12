@@ -238,8 +238,25 @@
 		} else {
 			$(this).removeClass('notEmpty');
 		}
-	});
-	
+    });
+    
+    // Form submit
+    $('#contactForm').submit((event) => {
+
+        $.support.cors = true;
+
+        $.ajax({
+            type: "POST",
+            url: event.target.action,
+            contentType: 'application/x-www-form-urlencoded',
+            data: { 
+                name: $('#cname').val(), 
+                email: $('#cemail').val() 
+            }
+          })
+
+        event.preventDefault();
+    })
 
     /* Back To Top Button */
     // create the back to top button
