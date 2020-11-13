@@ -51,24 +51,13 @@
             <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link page-scroll" href="article.html">Article <span class="sr-only">(current)</span></a>
+                        <a class="nav-link page-scroll" href="#header">Início</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link page-scroll" href="features.html">Features</a>
+                        <a class="nav-link page-scroll" href="#funcionalidades">Funcionalidades</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link page-scroll" href="pricing.html">Pricing</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Drop</a>
-                        <div class="dropdown-menu" aria-labelledby="dropdown01">
-                            <a class="dropdown-item page-scroll" href="terms.html">Terms Conditions</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item page-scroll" href="privacy.html">Privacy Policy</a>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link page-scroll" href="contact.html">Contact</a>
+                        <a class="nav-link page-scroll" href="#contato">Inscreva-se</a>
                     </li>
                 </ul>
                 <span class="nav-item social-icons">
@@ -90,7 +79,6 @@
     </nav> <!-- end of navbar -->
     <!-- end of navigation -->
 
-
     <!-- Header -->
     <header id="header" class="header">
         <div class="container">
@@ -98,9 +86,9 @@
                 <div class="col-lg-6">
                     <div class="text-container">
                         <h1>CONTROLE AGORA<br>SEUS <span id="js-rotating" class="morphext"><span class="animated fadeIn">RISCOS</span></span></h1>
-                        <p class="p-large">Proteja sua carteira com ajuda de sofisticados indicadores de risco e durma sempre tranquilo!</p>
-                        <a class="btn-solid-lg" href="#your-link"><i class="fab fa-apple"></i>For Apple</a>
-                        <a class="btn-solid-lg" href="#your-link"><i class="fab fa-google-play"></i>For Android</a>
+                        <p class="p-large">Proteja sua carteira de ativos contra oscilações do mercado com ajuda de sofisticados indicadores de risco e durma sempre tranquilo!</p>
+                        <a class="btn-solid-lg page-scroll" href="#contato"><i class="fab fa-apple"></i>For Apple</a>
+                        <a class="btn-solid-lg page-scroll" href="#contato"><i class="fab fa-google-play"></i>For Android</a>
                     </div> <!-- end of text-container -->
                 </div> <!-- end of col -->
                 <div class="col-lg-6">
@@ -112,12 +100,12 @@
     <!-- end of header -->
 
     <!-- Features -->
-    <div class="tabs">
+    <div id="funcionalidades" class="tabs">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h2 class="h2-heading">FEATURES</h2>
-                    <div class="p-heading">Leno was designed based on input from personal development coaches and popular trainers so it offers all required features</div>
+                    <h2 class="h2-heading">Funcionalidades</h2>
+                    <div class="p-heading">Pensado para não ser apenas mais um, mas oferecer o que ninguém ousou, de forma fácil e descomplicada.</div>
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
             <div class="row">
@@ -413,22 +401,22 @@
     <!-- end of features -->
 
     <!-- Form -->
-    <div class="basic-1">
+    <div id="contato" class="basic-1">
         <div class="container">
 
             <div class="row">
-                <div class="col-lg-12">
-                    <h2 class="h2-heading">INTERESTED?</h2>
-                    <div class="p-heading">Leave your name and e-mail below to be the informed as soon as the app gets available!</div>
+                <div class="col-lg-10 offset-lg-1">
+                    <h2 class="h2-heading">Tem interesse?</h2>
+                    <div class="p-heading">Deixe seus dados abaixo para ser avisado assim que o app for liberado!</div>
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
 
             <div class="row">
-                <div class="col-lg-12">
-                    <form id="contactForm" class="mb-6" data-toggle="validator" data-focus="false" method="post" action="https://us-central1-spry-kingdom-112007.cloudfunctions.net/safe-investing-lead">
+                <div class="col-lg-8 offset-lg-2">
+                    <form id="contactForm" class="mb-6" data-toggle="validator" data-focus="false" method="post">
                         <div class="form-group">
                             <input type="text" class="form-control-input" id="cname" name="name" required="">
-                            <label class="label-control" for="cname">Name</label>
+                            <label class="label-control" for="cname">Nome</label>
                             <div class="help-block with-errors"></div>
                         </div>
                         <div class="form-group">
@@ -437,7 +425,7 @@
                             <div class="help-block with-errors"></div>
                         </div>
                         <div class="form-group">
-                            <button type="submit" class="form-control-submit-button">Submit</button>
+                            <button type="submit" id="subscribe" class="form-control-submit-button" href="#subscribed-lightbox">Enviar</button>
                         </div>
                         <div class="form-message">
                             <div id="cmsgSubmit" class="h3 text-center hidden"></div>
@@ -448,320 +436,39 @@
         </div>
     </div>
 
-    <!-- Video -->
-    <div class="basic-2">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h2 class="h2-heading">PREVIEW</h2>
-                    <div class="p-heading">It's time to target the right customers for your business with the help of Leno's patented user tracking and segmentation technology</div>
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-            <div class="row">
-                <div class="col-lg-12">
-
-                    <!-- Video Preview -->
-                    <div class="image-container">
-                        <div class="video-wrapper">
-                            <a class="popup-youtube" href="https://www.youtube.com/watch?v=fLCjQJCekTs" data-effect="fadeIn">
-                                <img class="img-fluid" src="images/video-frame.jpg" alt="alternative">
-                                <span class="video-play-button">
-                                    <span></span>
-                                </span>
-                            </a>
-                        </div> <!-- end of video-wrapper -->
-                    </div> <!-- end of image-container -->
-                    <!-- end of video preview -->
-
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of basic-1 -->
-    <!-- end of video -->
-
-
-    <!-- Details 1 -->
-    <div class="basic-2 bg-dark-blue">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="image-container">
-                        <img class="img-fluid" src="images/details-1.png" alt="alternative">
-                    </div> <!-- end of image-container -->
-                </div> <!-- end of col -->
-                <div class="col-lg-6">
-                    <div class="text-container">
-                        <h2>Start using Leno today and set your long term goals</h2>
-                        <p>Leno can easily help you track your personal development evolution if you take the time to properly setup your goals at the beginning of the training process. Check it out</p>
-                        <a class="btn-solid-reg popup-with-move-anim" href="#details-1-lightbox">Lightbox</a>
-                    </div> <!-- end of text-container -->
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of basic-2 -->
-    <!-- end of details 1 -->
-
-
-    <!-- Details 1 Lightbox -->
-    <!-- Lightbox -->
-	<div id="details-1-lightbox" class="lightbox-basic zoom-anim-dialog mfp-hide">
+    <!-- Subscribed lightbox -->
+	<div id="subscribed-lightbox" class="lightbox-basic zoom-anim-dialog mfp-hide">
         <div class="row">
             <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
-			<div class="col-lg-8">
+			<div class="col-lg-5">
                 <div class="image-container">
-                    <img class="img-fluid" src="images/details-1-lightbox.jpg" alt="alternative">
+                    <img class="img-fluid" src="images/subscribed-pic.png" alt="alternative">
                 </div> <!-- end of image-container -->
 			</div> <!-- end of col -->
-			<div class="col-lg-4">
-                <h3>Goals Setting</h3>
+			<div class="col-lg-7">
+                <h3>Tudo certo!</h3>
 				<hr>
-                <p>The app can easily help you track your personal development evolution if you take the time to set it up.</p>
-                <h4>User Feedback</h4>
-                <p>This is a great app which can help you save time and make your live easier. And it will help improve your productivity.</p>
-                <ul class="list-unstyled li-space-lg">
-                    <li class="media">
-                        <i class="fas fa-check"></i><div class="media-body">Splash screen panel</div>
-                    </li>
-                    <li class="media">
-                        <i class="fas fa-check"></i><div class="media-body">Statistics graph report</div>
-                    </li>
-                    <li class="media">
-                        <i class="fas fa-check"></i><div class="media-body">Events calendar layout</div>
-                    </li>
-                    <li class="media">
-                        <i class="fas fa-check"></i><div class="media-body">Location details screen</div>
-                    </li>
-                    <li class="media">
-                        <i class="fas fa-check"></i><div class="media-body">Onboarding steps interface</div>
-                    </li>
-                </ul>
-                <a class="btn-solid-reg mfp-close page-scroll" href="#header">Download</a> <button class="btn-outline-reg mfp-close as-button" type="button">Back</button>
+                <p>Você foi adicionado na lista especial e será um dos primeiros à ter acesso ao Safe Investing.</p>
+
+                <button class="btn-outline-reg mfp-close as-button" type="button">Voltar ao início</button>
 			</div> <!-- end of col -->
 		</div> <!-- end of row -->
-    </div> <!-- end of lightbox-basic -->
-    <!-- end of lightbox -->
-    <!-- end of details 1 lightbox -->
-
-
-    <!-- Details 2 -->
-    <div class="basic-3 bg-dark-blue">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="text-container">
-                        <h2>The calendar feature helps you schedule tasks</h2>
-                        <p>The calendar input function enables the user to setup training, meditation and relaxation sessions with ease. Just open the feature and start setting your time</p>
-                        <a class="btn-solid-reg popup-with-move-anim" href="#details-1-lightbox">Lightbox</a>
-                    </div> <!-- end of text-container -->
-                </div> <!-- end of col -->
-                <div class="col-lg-6">
-                    <div class="image-container">
-                        <img class="img-fluid" src="images/details-2.png" alt="alternative">
-                    </div> <!-- end of image-container -->
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of basic-3 -->
-    <!-- end of details 2 -->
-
-
-    <!-- Statistics -->
-    <div class="counter">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-
-                    <!-- Counter -->
-                    <div id="counter">
-                        <div class="cell">
-                            <i class="fas fa-users"></i>
-                            <div class="counter-value number-count" data-count="231">231</div>
-                            <p class="counter-info p-small">Happy Customers</p>
-                        </div>
-                        <div class="cell">
-                            <i class="fas fa-code green"></i>
-                            <div class="counter-value number-count" data-count="385">385</div>
-                            <p class="counter-info p-small">Good Reviews</p>
-                        </div>
-                        <div class="cell">
-                            <i class="fas fa-cog red"></i>
-                            <div class="counter-value number-count" data-count="159">159</div>
-                            <p class="counter-info p-small">Press Articles</p>
-                        </div>
-                        <div class="cell">
-                            <i class="fas fa-comments yellow"></i>
-                            <div class="counter-value number-count" data-count="127">127</div>
-                            <p class="counter-info p-small">Solved Issues</p>
-                        </div>
-                        <div class="cell">
-                            <i class="fas fa-rocket blue"></i>
-                            <div class="counter-value number-count" data-count="211">211</div>
-                            <p class="counter-info p-small">Future Updates</p>
-                        </div>
-                    </div>
-                    <!-- end of counter -->
-
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of counter -->
-    <!-- end of statistics -->
-
-
-    <!-- Screenshots -->
-    <div class="slider-2">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h2 class="h2-heading">SCREENS</h2>
-                    <hr class="hr-heading">
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-            <div class="row">
-                <div class="col-lg-12">
-                    
-                    <!-- Image Slider -->
-                    <div class="slider-container">
-                        <div class="swiper-container image-slider swiper-container-horizontal">
-                            <div class="swiper-wrapper" style="transform: translate3d(-228px, 0px, 0px); transition-duration: 0ms;">
-                                
-                                <!-- Slide -->
-                                <div class="swiper-slide swiper-slide-prev" style="width: 198px; margin-right: 30px;">
-                                    <a href="images/screenshot-1.png" class="popup-link" data-effect="fadeIn">
-                                        <img class="img-fluid" src="images/screenshot-1.png" alt="alternative">
-                                    </a>
-                                </div>
-                                <!-- end of slide -->
-                                
-                                <!-- Slide -->
-                                <div class="swiper-slide swiper-slide-active" style="width: 198px; margin-right: 30px;">
-                                    <a href="images/screenshot-2.png" class="popup-link" data-effect="fadeIn">
-                                        <img class="img-fluid" src="images/screenshot-2.png" alt="alternative">
-                                    </a>
-                                </div>
-                                <!-- end of slide -->
-
-                                <!-- Slide -->
-                                <div class="swiper-slide swiper-slide-next" style="width: 198px; margin-right: 30px;">
-                                    <a href="images/screenshot-3.png" class="popup-link" data-effect="fadeIn">
-                                        <img class="img-fluid" src="images/screenshot-3.png" alt="alternative">
-                                    </a>
-                                </div>
-                                <!-- end of slide -->
-
-                                <!-- Slide -->
-                                <div class="swiper-slide" style="width: 198px; margin-right: 30px;">
-                                    <a href="images/screenshot-4.png" class="popup-link" data-effect="fadeIn">
-                                        <img class="img-fluid" src="images/screenshot-4.png" alt="alternative">
-                                    </a>
-                                </div>
-                                <!-- end of slide -->
-
-                                <!-- Slide -->
-                                <div class="swiper-slide" style="width: 198px; margin-right: 30px;">
-                                    <a href="images/screenshot-5.png" class="popup-link" data-effect="fadeIn">
-                                        <img class="img-fluid" src="images/screenshot-5.png" alt="alternative">
-                                    </a>
-                                </div>
-                                <!-- end of slide -->
-                                
-                                <!-- Slide -->
-                                <div class="swiper-slide" style="width: 198px; margin-right: 30px;">
-                                    <a href="images/screenshot-6.png" class="popup-link" data-effect="fadeIn">
-                                        <img class="img-fluid" src="images/screenshot-6.png" alt="alternative">
-                                    </a>
-                                </div>
-                                <!-- end of slide -->
-
-                                <!-- Slide -->
-                                <div class="swiper-slide" style="width: 198px; margin-right: 30px;">
-                                    <a href="images/screenshot-7.png" class="popup-link" data-effect="fadeIn">
-                                        <img class="img-fluid" src="images/screenshot-7.png" alt="alternative">
-                                    </a>
-                                </div>
-                                <!-- end of slide -->
-
-                                <!-- Slide -->
-                                <div class="swiper-slide" style="width: 198px; margin-right: 30px;">
-                                    <a href="images/screenshot-8.png" class="popup-link" data-effect="fadeIn">
-                                        <img class="img-fluid" src="images/screenshot-8.png" alt="alternative">
-                                    </a>
-                                </div>
-                                <!-- end of slide -->
-
-                                <!-- Slide -->
-                                <div class="swiper-slide" style="width: 198px; margin-right: 30px;">
-                                    <a href="images/screenshot-9.png" class="popup-link" data-effect="fadeIn">
-                                        <img class="img-fluid" src="images/screenshot-9.png" alt="alternative">
-                                    </a>
-                                </div>
-                                <!-- end of slide -->
-
-                                <!-- Slide -->
-                                <div class="swiper-slide" style="width: 198px; margin-right: 30px;">
-                                    <a href="images/screenshot-10.png" class="popup-link" data-effect="fadeIn">
-                                        <img class="img-fluid" src="images/screenshot-10.png" alt="alternative">
-                                    </a>
-                                </div>
-                                <!-- end of slide -->
-                                
-                            </div> <!-- end of swiper-wrapper -->
-
-                            <!-- Add Arrows -->
-                            <div class="swiper-button-next" tabindex="0" role="button" aria-label="Next slide" aria-disabled="false"></div>
-                            <div class="swiper-button-prev" tabindex="0" role="button" aria-label="Previous slide" aria-disabled="false"></div>
-                            <!-- end of add arrows -->
-
-                        <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div> <!-- end of swiper-container -->
-                    </div> <!-- end of slider-container -->
-                    <!-- end of image slider -->
-
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of slider-2 -->
-    <!-- end of screenshots -->
-
-
-    <!-- Download -->
-    <div class="basic-4">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="text-container">
-                        <h3>Download Leno today to see the benefits and enjoy the results faster than any other app out there</h3>
-                        <a class="btn-solid-lg" href="#your-link"><i class="fab fa-apple"></i>For iOS</a>
-                        <a class="btn-solid-lg" href="#your-link"><i class="fab fa-google-play"></i>For Android</a>
-                    </div> <!-- end of text-container -->
-                </div> <!-- end of col -->
-                <div class="col-lg-6">
-                    <div class="image-container">
-                        <img class="img-fluid" src="images/download.png" alt="alternative">
-                    </div> <!-- end of image-container -->
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of basic-4 -->
-    <!-- end of download -->
-
+    </div>
 
     <!-- Footer -->
     <div class="footer bg-dark-blue">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
+                    
                     <div class="footer-col first">
-                        <h6>About Leno</h6>
-                        <p class="p-small">Leno is a mobile app HTML Bootstrap landing page template built to help you create great basic websites for apps and grow the user base.</p>
+                        <h6>Safe Investing</h6>
+                        <p class="p-small">Aplicativo inovador para calcular e mitigar os riscos de carteiras de ativos em renda variável contra grandes oscilações do mercado</p>
                     </div> <!-- end of footer-col -->
+                    
                     <div class="footer-col second">
-                        <h6>Links</h6>
-                        <ul class="list-unstyled li-space-lg p-small">
-                            <li>Important: <a href="terms.html">Terms &amp; Conditions</a>, <a href="privacy.html">Privacy Policy</a></li>
-                            <li>Useful: <a href="">Colorpicker</a>, <a href="">Icon Library</a>, <a href="">Illustrations</a></li>
-                            <li>Menu: <a href="article.html">Article</a>, <a href="features.html">Features</a>, <a href="pricing.html">Pricing</a>, <a href="contact.html">Contact</a></li>
-                        </ul>
                     </div> <!-- end of footer-col -->
+                    
                     <div class="footer-col third">
                         <span class="fa-stack">
                             <a href="#your-link">
@@ -787,7 +494,7 @@
                                 <i class="fab fa-instagram fa-stack-1x"></i>
                             </a>
                         </span>
-                        <p class="p-small">We would love to hear from you <a href="mailto:contact@safeinvesting.com"><strong>contact@safeinvesting.com</strong></a></p>
+                        <p class="p-small">Entre em contato conosco <a href="mailto:contact@safeinvesting.com"><strong>contact@safeinvesting.com</strong></a></p>
                     </div> <!-- end of footer-col -->
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
@@ -795,20 +502,6 @@
     </div> <!-- end of footer -->  
     <!-- end of footer -->
 
-
-    <!-- Copyright
-    <div class="copyright bg-dark-blue">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <p class="p-small">Copyright © <a href="https://google.com/">Template by</a></p>
-                </div> 
-            </div> 
-        </div>
-    </div>
-    end of copyright -->
-    
-    	
     <!-- Scripts -->
     <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
     <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->

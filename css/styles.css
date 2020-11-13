@@ -945,7 +945,7 @@ input[type='checkbox'] {
 /******************************/
 .lightbox-basic {
 	position: relative;
-	max-width: 71.875rem;
+	width: 30.875rem;
 	margin: 2.5rem auto;
 	padding: 3rem 1rem;
 	background-color: #2f2c3d;
@@ -953,7 +953,10 @@ input[type='checkbox'] {
 }
 
 .lightbox-basic .image-container {
-	margin-bottom: 3rem;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	margin: auto;
 	text-align: center;
 }
 

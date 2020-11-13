@@ -240,21 +240,44 @@
 		}
     });
     
+    // Subscribe button
+    $('#subscribe').click((event) => {
+
+        const name = $('#cname').val()
+        const email = $('#cemail').val() 
+
+        // Empty fields
+        if (!name || !email)
+            return
+
+        // Call API to save lead
+        /*$.ajax({
+            type: "POST",
+            url: 'https://us-central1-spry-kingdom-112007.cloudfunctions.net/safe-investing-lead',
+            contentType: 'application/x-www-form-urlencoded',
+            data: { name, email }
+        })*/
+
+        // Open subscribed modal
+        setTimeout(() => {
+            $.magnificPopup.open({
+                items: {
+                  src: '#subscribed-lightbox',
+                  type: 'inline'
+                }
+              })
+
+            // Clear fields
+            $('#cname').val('')
+            $('#cemail').val('')
+
+            // Focus on home
+            location.href = "#header"
+        }, 400)
+    })
+
     // Form submit
     $('#contactForm').submit((event) => {
-
-        $.support.cors = true;
-
-        $.ajax({
-            type: "POST",
-            url: event.target.action,
-            contentType: 'application/x-www-form-urlencoded',
-            data: { 
-                name: $('#cname').val(), 
-                email: $('#cemail').val() 
-            }
-          })
-
         event.preventDefault();
     })
 
