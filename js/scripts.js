@@ -251,12 +251,12 @@
             return
 
         // Call API to save lead
-        /*$.ajax({
+        $.ajax({
             type: "POST",
             url: 'https://us-central1-spry-kingdom-112007.cloudfunctions.net/safe-investing-lead',
             contentType: 'application/x-www-form-urlencoded',
             data: { name, email }
-        })*/
+        })
 
         // Open subscribed modal
         setTimeout(() => {
