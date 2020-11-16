@@ -2175,4 +2175,9 @@ a:hover.back-to-top {
 	}
 	/* end of extra pages */
 }
+
+.img-fluid {
+	border-radius: 1.5rem;
+}
+
 /* end of min-width 1200px */
