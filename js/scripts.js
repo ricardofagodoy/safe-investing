@@ -271,9 +271,12 @@
             $('#cname').val('')
             $('#cemail').val('')
 
-            // Focus on home
-            location.href = "#header"
         }, 400)
+    })
+
+    $('#close-subscribe').click(() => {
+        // Focus on home
+        location.href = "#header"
     })
 
     // Form submit
