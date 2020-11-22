@@ -70,21 +70,12 @@
                     <li class="nav-item">
                         <a class="nav-link page-scroll" href="#funcionalidades">Funcionalidades</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link page-scroll" href="#contato">Inscreva-se</a>
-                    </li>
                 </ul>
                 <span class="nav-item social-icons">
                     <span class="fa-stack">
-                        <a href="#your-link">
+                        <a href="https://www.facebook.com/Safe-Investing-103079841632360">
                             <i class="fas fa-circle fa-stack-2x"></i>
                             <i class="fab fa-facebook-f fa-stack-1x"></i>
-                        </a>
-                    </span>
-                    <span class="fa-stack">
-                        <a href="#your-link">
-                            <i class="fas fa-circle fa-stack-2x"></i>
-                            <i class="fab fa-twitter fa-stack-1x"></i>
                         </a>
                     </span>
                 </span>
@@ -99,14 +90,41 @@
             <div class="row">
                 <div class="col-lg-6">
                     <div class="text-container">
-                        <h1>CONTROLE AGORA<br>SEUS <span id="js-rotating" class="morphext"><span
+                        <h1>CONTROLE<br>SEUS <span id="js-rotating" class="morphext"><span
                                     class="animated fadeIn">RISCOS</span></span></h1>
                         <p class="p-large">Proteja sua carteira de ativos contra oscilações do mercado com ajuda de
-                            sofisticados indicadores de risco e durma sempre tranquilo!</p>
-                        <a class="btn-solid-lg page-scroll" href="#contato"><i class="fab fa-apple"></i>For Apple</a>
-                        <a class="btn-solid-lg page-scroll" href="#contato"><i class="fab fa-google-play"></i>For
-                            Android</a>
+                            sofisticados indicadores de risco.
+                        </p>
+                            
                     </div> <!-- end of text-container -->
+
+                    <div class="row">
+                        <div class="col-lg-10 offset-lg-1">
+
+                            <p>Deixe seu contato abaixo para ser avisado quando o aplicativo estiver disponível no Google Play e App Store:</p>
+
+                            <form id="contactForm" class="mb-6" data-toggle="validator" data-focus="false" method="post">
+                                <div class="form-group">
+                                    <input type="text" class="form-control-input" id="cname" name="name" required="">
+                                    <label class="label-control" for="cname">Nome</label>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control-input" id="cemail" name="email" required="">
+                                    <label class="label-control" for="cemail">Email</label>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                                <div class="form-group">
+                                    <button type="submit" id="subscribe" class="form-control-submit-button"
+                                        href="#subscribed-lightbox">Enviar</button>
+                                </div>
+                                <div class="form-message">
+                                    <div id="cmsgSubmit" class="h3 text-center hidden"></div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
                 </div> <!-- end of col -->
                 <div class="col-lg-6">
                     <img class="img-fluid" src="images/header-smartphones.png" alt="alternative">
@@ -115,6 +133,25 @@
         </div> <!-- end of container -->
     </header> <!-- end of header -->
     <!-- end of header -->
+
+    <!-- Subscribed lightbox -->
+    <div id="subscribed-lightbox" class="lightbox-basic zoom-anim-dialog mfp-hide">
+        <div class="row">
+            <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
+            <div class="col-lg-4 offset-lg-1">
+                <div class="image-container">
+                    <img class="img-fluid" src="images/subscribed-pic.png" alt="alternative">
+                </div> <!-- end of image-container -->
+            </div> <!-- end of col -->
+            <div class="col-lg-6">
+                <h3>Tudo certo!</h3>
+                <hr>
+                <p>Agora você faz parte da lista especial e será um dos primeiros à ter acesso ao Safe Investing.</p>
+
+                <button id="close-subscribe" class="btn-outline-reg mfp-close as-button" type="button">Fechar</button>
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+    </div>
 
     <!-- Features -->
     <div id="funcionalidades" class="tabs">
@@ -373,64 +410,6 @@
     </div> <!-- end of tabs -->
     <!-- end of features -->
 
-    <!-- Form -->
-    <div id="contato" class="basic-1">
-        <div class="container">
-
-            <div class="row">
-                <div class="col-lg-10 offset-lg-1">
-                    <h2 class="h2-heading">Tem interesse?</h2>
-                    <div class="p-heading">Deixe seus dados abaixo para ser avisado assim que o aplicativo for liberado!
-                    </div>
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-
-            <div class="row">
-                <div class="col-lg-8 offset-lg-2">
-                    <form id="contactForm" class="mb-6" data-toggle="validator" data-focus="false" method="post">
-                        <div class="form-group">
-                            <input type="text" class="form-control-input" id="cname" name="name" required="">
-                            <label class="label-control" for="cname">Nome</label>
-                            <div class="help-block with-errors"></div>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" class="form-control-input" id="cemail" name="email" required="">
-                            <label class="label-control" for="cemail">Email</label>
-                            <div class="help-block with-errors"></div>
-                        </div>
-                        <div class="form-group">
-                            <button type="submit" id="subscribe" class="form-control-submit-button"
-                                href="#subscribed-lightbox">Enviar</button>
-                        </div>
-                        <div class="form-message">
-                            <div id="cmsgSubmit" class="h3 text-center hidden"></div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Subscribed lightbox -->
-    <div id="subscribed-lightbox" class="lightbox-basic zoom-anim-dialog mfp-hide">
-        <div class="row">
-            <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
-            <div class="col-lg-4 offset-lg-1">
-                <div class="image-container">
-                    <img class="img-fluid" src="images/subscribed-pic.png" alt="alternative">
-                </div> <!-- end of image-container -->
-            </div> <!-- end of col -->
-            <div class="col-lg-6">
-                <h3>Tudo certo!</h3>
-                <hr>
-                <p>Agora você faz parte da lista especial e será um dos primeiros à ter acesso ao Safe Investing.</p>
-
-                <button id="close-subscribe" class="btn-outline-reg mfp-close as-button" type="button">Voltar ao
-                    início</button>
-            </div> <!-- end of col -->
-        </div> <!-- end of row -->
-    </div>
-
     <!-- Footer -->
     <div class="footer bg-dark-blue">
         <div class="container">
@@ -448,27 +427,9 @@
 
                     <div class="footer-col third">
                         <span class="fa-stack">
-                            <a href="#your-link">
+                            <a href="https://www.facebook.com/Safe-Investing-103079841632360">
                                 <i class="fas fa-circle fa-stack-2x"></i>
                                 <i class="fab fa-facebook-f fa-stack-1x"></i>
-                            </a>
-                        </span>
-                        <span class="fa-stack">
-                            <a href="#your-link">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-twitter fa-stack-1x"></i>
-                            </a>
-                        </span>
-                        <span class="fa-stack">
-                            <a href="#your-link">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-pinterest-p fa-stack-1x"></i>
-                            </a>
-                        </span>
-                        <span class="fa-stack">
-                            <a href="#your-link">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-instagram fa-stack-1x"></i>
                             </a>
                         </span>
                         <p class="p-small">Entre em contato conosco <a

@@ -274,10 +274,10 @@
         }, 400)
     })
 
-    $('#close-subscribe').click(() => {
-        // Focus on home
-        location.href = "#header"
-    })
+    // $('#close-subscribe').click(() => {
+    //     // Focus on home
+    //     location.href = "#header"
+    // })
 
     // Form submit
     $('#contactForm').submit((event) => {
